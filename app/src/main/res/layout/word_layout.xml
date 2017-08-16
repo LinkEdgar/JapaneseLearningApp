@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="@color/tan_background"
+    android:minHeight="@dimen/list_item_height"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/word_image_view"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height" />
+
+ <RelativeLayout
+     android:paddingRight="16dp"
+     android:id="@+id/color_container"
+     android:paddingLeft="16dp"
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <LinearLayout
+         android:layout_toRightOf="@+id/word_image_view"
+         android:orientation="vertical"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+<TextView
+    android:textStyle="bold"
+    android:textColor="@android:color/white"
+    android:textAppearance="@android:style/TextAppearance.Medium"
+    tools:text="一"
+    android:layout_marginTop="16dp"
+    android:id="@+id/japanese_text_view"
+    android:layout_width="wrap_content"
+    android:layout_weight="1"
+    android:layout_gravity="bottom"
+    android:layout_height="0dp" />
+
+ <TextView
+     android:textColor="@android:color/white"
+     android:textAppearance="@android:style/TextAppearance.Medium"
+     android:textSize="18sp"
+     tools:text="one"
+     android:id="@+id/default_text_view"
+     android:layout_width="wrap_content"
+     android:layout_weight="1"
+     android:layout_gravity="top"
+     android:layout_height="0dp" />
+     </LinearLayout>
+     <ImageView
+         android:layout_alignParentRight="true"
+         android:layout_centerInParent="true"
+         android:src="@drawable/arrow_icon"
+         android:layout_width="24dp"
+         android:layout_height="24dp" />
+ </RelativeLayout>
+
+</LinearLayout>
